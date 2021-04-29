@@ -1,0 +1,19 @@
+@import '../vendor/normalize.css';
+@import '../vendor/fonts/fonts.css';
+@import 'review';
+
+// body {
+//   background-color: #F5F7FA;
+// }
+
+.page {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 300px;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #F5F7FA;
+  min-height: 100%;
+}

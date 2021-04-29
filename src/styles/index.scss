@@ -1,0 +1,19 @@
+@import '../vendor/normalize.css';
+@import '../vendor/fonts/fonts.css';
+@import 'form';
+
+body {
+  background-color: #343539;
+}
+
+.page {
+  font-family: 'Helvetica Neue';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 343px;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #343539;
+  min-height: 100%;
+}

@@ -2,9 +2,9 @@
 @import '../vendor/fonts/fonts.css';
 @import 'review';
 
-// body {
-//   background-color: #F5F7FA;
-// }
+body {
+  background-color: #F5F7FA;
+}
 
 .page {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
@@ -16,4 +16,5 @@
   margin: 0 auto;
   background-color: #F5F7FA;
   min-height: 100%;
+  position: relative;
 }

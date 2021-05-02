@@ -29,7 +29,8 @@
 .content {
   position: relative;
   max-width: 1170px;
-  margin: 0 auto;
+  margin: 60px auto 100px;
+
 }
 
 .reviews {
@@ -232,13 +233,33 @@
   color: #1373E5;
   background-color: #fff;
   @extend %f-sb;
+  @extend %flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   transition: all .4s;
   &:hover {
     opacity: .6;
   }
+  &_more {
+    background-color: inherit;
+    padding: 15px 12px 15px 21px;
+    height: 48px;
+    margin: 0 auto;
+  }
 }
 
+.review__button-number {
+  width: 32px;
+  height: 32px;
+  background: rgba(19, 115, 229, 0.1);
+  border-radius: 50%;
+  @extend %flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  justify-self: center;
+}
 .review__thumb {
   @extend %flex;
 }
@@ -336,13 +357,6 @@
   margin: 0;
 }
 
-.rating__data-item {
-
-}
-.rating__data-icon {
-
-}
-
 .rating__data-title {
   @extend %f-normal;
   margin: 0;
@@ -390,18 +404,166 @@
 
   
 
-
-
-
-
-@media screen and (max-width: 1300px) {
-  
+@media screen and (max-width: 1200px) {
+  .rating {
+    position: static;
+    margin-bottom: 40px;
+    max-width: 690px;
+    display: grid;
+    grid-template-columns: 314px 1fr;
+    gap: 19px 88px;
+    grid-auto-flow: dense;
+    padding: 30px 74px 34px 34px;
+  }
+  .rating__title {
+    grid-column: 1/3;
+  }
+  .rating__section_value {
+    grid-column: 2/3;
+  }
+  .rating__section_data {
+    grid-column: 1/2;
+    align-items: flex-start;
+  }
+  .reviews {
+    max-width: 690px;
+  }
+  .content {
+    max-width: 690px;
+  }
 }
 
-@media screen and (max-width: 700px) {
-  
+
+@media screen and (max-width: 630px) {
+  .rating {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 16px 29px;
+  }
+  .rating__value {
+    font-size: 40px;
+    font-weight: 500;
+  }
+  .rating__section_data {
+    align-items: center;
+  }
+  .rating__section {
+    margin: 0 0 19px;
+    &:last-child {
+      margin: 0;
+    }
+  }
+  .rating__stars {
+    margin-bottom: 11px;
+  }
 }
 
-@media screen and (max-width: 400px) {
-  
+@media screen and (max-width: 500px) {
+  .content {
+    max-width: 320px;
+    margin: 0 auto 40px;
+  }
+  .reviews {
+    max-width: 288px;
+    margin: 0 auto;
+  }
+  .review {
+    padding: 20px 20px 24px;
+  }
+  .review__section {
+    margin-bottom: 8px;
+  }
+  .review__icon {
+    top: 20px;
+    right: 10px;
+  }
+  .review__button {
+    border: none;
+    line-height: 24px;
+    &_more {
+      border: 1px solid #1373E5;
+    }
+  }
+  .review__person-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .review__person-info {
+    margin-bottom: 4px;
+  }
+  .review__caption_comments {
+    display: none;
+  }
+  .review__person-photo {
+    width: 40px;
+    height: 40px;
+  }
+  .review__text_company {
+    max-width: 197px;
+    white-space: inherit;
+  }
+  .review__comments-item {
+    margin-bottom: 9px;
+  }
+  .reviews__title {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .review__thumb-wrapper {
+    margin-right: 13px;
+  }
+  .review__thumb-icon {
+    margin-right: 4px;
+  }
+  .review__comments-item_plus {
+    flex-direction: column;
+    position: relative;
+    &::after {
+      content: 'Достоинства';
+      position: absolute;
+      top: 0;
+      left: 25px;
+      font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+      align-self: center;
+    }
+  }
+  .review__comments-item_minus {
+    flex-direction: column;
+    position: relative;
+    &::after {
+      content: 'Недостатки';
+      position: absolute;
+      top: 0;
+      left: 25px;
+      font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+      align-self: center;
+    }
+  }
+  .review__comments-icon{
+    width: 20px;
+    height: 20px;
+    margin: 0 0 6px;
+  }
+  .review__comments-text_plus {
+    max-height: 144px;
+    overflow: hidden;
+  }
+  .review__comments-text_minus {
+    max-height: 48px;
+    overflow: hidden;
+  }
+  .review__comments-text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .review__dot {
+    display: none;
+  }
 }

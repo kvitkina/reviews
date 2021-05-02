@@ -8,5 +8,8 @@
 
 Все зависимости указаны в package.json.
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> dev
 Ссылка на gh-pages https://kvitkina.github.io/reviews/index.html

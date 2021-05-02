@@ -1,5 +1,4 @@
-# dot-dot
-ФОРМА с разными типами инпутов.
+# reviews
 
 Методология: БЭМ
 Препроцессор: Sass/SCSS
@@ -8,6 +7,6 @@
 Верстка резиновая.
 
 Все зависимости указаны в package.json.
-Команда npm i установливает все необходимое для того, чтобы сборка проекта работала.
 
-Ссылка на gh-pages https://kvitkina.github.io/dot-dot/index.html
+
+Ссылка на gh-pages https://kvitkina.github.io/reviews/index.html

@@ -101,7 +101,7 @@
   height: 48px;
   margin: 0 17px 0 0;
   cursor: pointer;
-  background-image: url(../images/Group-20.png);
+  background-image: url(../images/default-photo.svg);
   border-radius: 50%;
 }
 
@@ -112,9 +112,10 @@
 }
 
 .review__person-rating {
+  position: absolute;
+  top: 26px;
+  right: 63px;
   @extend %flex;
-  margin-left: auto;
-  margin-right: 37px;
   align-items: center;
 }
 
@@ -158,7 +159,10 @@
 }
 
 .review__star-icon {
+  width: 22px;
+  height: 22px;
   margin-right: 6px;
+  background: url(./../images/icons/star.svg) no-repeat center;
 }
 
 .review__rating-value {
@@ -456,6 +460,11 @@
   .rating__stars {
     margin-bottom: 11px;
   }
+  .review__text_company {
+    max-width: 197px;
+    max-height: 48px;
+    white-space: inherit;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -472,6 +481,7 @@
   }
   .review__section {
     margin-bottom: 8px;
+    align-items: flex-start;
   }
   .review__icon {
     top: 20px;
@@ -498,10 +508,7 @@
     width: 40px;
     height: 40px;
   }
-  .review__text_company {
-    max-width: 197px;
-    white-space: inherit;
-  }
+  
   .review__comments-item {
     margin-bottom: 9px;
   }
@@ -565,5 +572,12 @@
   }
   .review__dot {
     display: none;
+  }
+  .review__person-rating {
+    left: 20px;
+    top: 110px;
+  }
+  .rating {
+    border-radius: 0;
   }
 }

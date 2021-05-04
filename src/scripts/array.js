@@ -1,6 +1,6 @@
 export const array = [
   {
-    photo: 'url(../images/Group-20.png)',
+    photo: './images/Group-20.png',
     name: 'Александр',
     status: 'Опытный',
     color: 'green',
@@ -16,7 +16,7 @@ export const array = [
     down: '10'
   },
   {
-    photo: 'url(../images/Group-20.png)',
+    photo: './images/default-photo.svg',
     name: 'Вера',
     status: 'Заблокирован',
     color: 'red',
@@ -32,7 +32,7 @@ export const array = [
     down: '10'
   },
   {
-    photo: 'url(../images/Group-20.png)',
+    photo: './images/samanta.png',
     name: 'Александр',
     status: 'Опытный',
     color: 'green',

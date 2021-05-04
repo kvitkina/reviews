@@ -14,6 +14,7 @@ export class Card {
     this._minus = data.minus
     this._up = data.up
     this._down = data.down
+    this._downColor = data.dowmColor
     this._elementsTemplate = elementsTemplate
   }
 
@@ -24,9 +25,9 @@ export class Card {
 
   generateCard () {
     this._element = this._getTemplate()
+
     const status = this._element.querySelector('.review__status')
-    console.log(this._flag)
-    this._element.querySelector('.review__person-photo').style.backgroundImage = this._photo
+    this._element.querySelector('.review__person-photo').style.backgroundImage = `url(<%=require('${this._photo}')%>)`
     this._element.querySelector('.review__name').textContent = this._name
     status.textContent = this._status
     this._element.querySelector('.review__country-icon').src = this._flag
@@ -40,12 +41,12 @@ export class Card {
     this._element.querySelector('.review__thumb-value_up').textContent = this._up
     this._element.querySelector('.review__thumb-value_down').textContent = this._down
     
-    if(this._color === 'red'){
+    if(this._color === 'red') {
       status.classList.add('review__status_blocked')
     } else {
       status.classList.remove('review__status_blocked')
     }
-    
+
     return this._element
   }
 }

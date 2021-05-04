@@ -102,7 +102,9 @@
   margin: 0 17px 0 0;
   cursor: pointer;
   background-image: url(../images/default-photo.svg);
+  border: none;
   border-radius: 50%;
+  background-position: center;
 }
 
 .review__person-info {

@@ -27,7 +27,7 @@ export class Card {
     this._element = this._getTemplate()
 
     const status = this._element.querySelector('.review__status')
-    this._element.querySelector('.review__person-photo').style.backgroundImage = `url(<%=require('${this._photo}')%>)`
+    this._element.querySelector('.review__person-photo').src = this._photo
     this._element.querySelector('.review__name').textContent = this._name
     status.textContent = this._status
     this._element.querySelector('.review__country-icon').src = this._flag
